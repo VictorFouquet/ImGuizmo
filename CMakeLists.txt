@@ -1,5 +1,5 @@
 add_library(imGuizmo STATIC
-    graphEditor.cpp
+    GraphEditor.cpp
     ImCurveEdit.cpp
     ImGradient.cpp
     ImGuizmo.cpp
@@ -8,4 +8,8 @@ add_library(imGuizmo STATIC
 
 target_include_directories(imGuizmo PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+target_link_libraries(imGuizmo
+    imgui
 )
